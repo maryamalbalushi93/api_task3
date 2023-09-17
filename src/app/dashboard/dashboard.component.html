@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+<body>
+
+<div id="wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Employees Management System</a>
+        </div>
+    </nav>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav">
+                <li>
+                    <a routerLink="/add" class="nav-link" data-section="add"><i class="fa fa-fw fa-user-plus"></i>Add</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link" data-section="update"><i class="fa fa-fw fa-user-plus"></i>Update</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link" data-section="delete"><i class="fa fa-fw fa-paper-plane-o"></i>Delete</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link" data-section="help"><i class="fa fa-fw fa fa-question-circle"></i>Help</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <!-- Page Heading -->
+            <div class="row" id="main" >
+                <div class="col-sm-12 col-md-12 well" id="content">
+                    <div id="welcome" class="section" style="display: block;">
+                        <h1>Welcome Admin!</h1>
+                    </div>
+                    <div id="add" class="section" style="display: none;">
+                        <!-- Add Page Content Goes Here -->
+                        <h1>Add Page</h1>
+                        <!-- Add Form, Elements, etc. -->
+                    </div>
+                    <div id="update" class="section" style="display: none;">
+                        <!-- Update Page Content Goes Here -->
+                        <h1>Update Page</h1>
+                        <!-- Update Form, Elements, etc. -->
+                    </div>
+                    <div id="delete" class="section" style="display: none;">
+                        <!-- Delete Page Content Goes Here -->
+                        <h1>Delete Page</h1>
+                        <!-- Delete Form, Elements, etc. -->
+                    </div>
+                    <div id="help" class="section" style="display: none;">
+                        <!-- Help Page Content Goes Here -->
+                        <h1>Help Page</h1>
+                        <!-- Help Information, Elements, etc. -->
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+</div><!-- /#wrapper -->
+
+<script>
+    $(document).ready(function() {
+        // Click handler for navigation links
+        $('.nav-link').on('click', function(e) {
+            e.preventDefault();
+            var section = $(this).data('section');
+            $('.section').hide();
+            $('#' + section).show();
+        });
+    });
+    </script>
+
+</body>
+</html>
+
