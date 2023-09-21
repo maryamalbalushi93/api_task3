@@ -1,0 +1,82 @@
+{
+  "emplyee_list": [
+    {
+      "name": "maryam mohammed",
+      "email": "maryam@hotmail.com",
+      "phone_number": "9988763",
+      "address": "sur",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "name": "maryam mohammed",
+      "phone_number": "9988763",
+      "email": "maryam@hotmail.com",
+      "address": "muscat"
+    },
+    {
+      "employeeId": "",
+      "name": "basma",
+      "email": "basma@hotmail.com",
+      "phone_number": "99887342",
+      "address": "muscat",
+      "id": 5
+    },
+    {
+      "employeeId": "",
+      "name": "usama",
+      "email": "usama@hotmail.com",
+      "phone_number": "88776652",
+      "address": "sohar",
+      "id": 6
+    },
+    {
+      "employeeId": "",
+      "name": "samar",
+      "email": "samr@gmail.com",
+      "phone_number": "99998234",
+      "address": "muscat",
+      "id": 7
+    },
+    {
+      "employeeId": "",
+      "name": "mmm@gmail.com",
+      "email": "mmm@gmail.com",
+      "phone_number": "mmm@gmail.com",
+      "address": "mmm@gmail.com",
+      "id": 8
+    },
+    {
+      "employeeId": "",
+      "name": "jjj",
+      "email": "mmm@gmail.com",
+      "phone_number": "998764",
+      "address": "muscat",
+      "id": 9
+    },
+    {
+      "employeeId": "",
+      "name": "maryam",
+      "email": "mmm@gmail.com",
+      "phone_number": "6673573",
+      "address": "muscat",
+      "id": 12
+    },
+    {
+      "employeeId": "",
+      "name": "maryam",
+      "email": "mmm@gmail.com",
+      "phone_number": "9876549",
+      "address": "muscat",
+      "id": 13
+    }
+  ],
+  "users": [
+    {
+      "name": "maryam",
+      "email": "mmm@gmail.com",
+      "phone_number": "987654",
+      "password": "123123"
+    }
+  ]
+}

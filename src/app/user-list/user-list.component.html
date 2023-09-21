@@ -1,1 +1,28 @@
-<p>user-list works!</p>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">name</th>
+        <th scope="col">phone_number</th>
+        <th scope="col">email</th>
+        <th scope="col">address</th>
+        <th scope="col">Action</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of collection">
+        <td>{{ emp.id }}</td>
+        <td>{{ emp.name }}</td>
+        <td>{{ emp.phone_number }}</td>
+        <td>{{ emp.email }}</td>
+        <td>{{ emp.address }}</td>
+        <td><a routerLink="/update/{{emp.id}}">
+          <i  class="fa fa-edit" style="font-size:24px;color:red"></i></a>&nbsp;&nbsp;
+          <i (click)="deleteemp(emp.id)" class="fa fa-trash-o" style="font-size:24px;color:red"></i>
+
+        </td>
+
+      </tr>
+    </tbody>
+  </table>

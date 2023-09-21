@@ -1,0 +1,66 @@
+/* Add this CSS to your stylesheet */
+
+/* Style for form container */
+.form-container {
+    max-width: 400px;
+    padding: 20px;
+    margin-top: 20px;
+margin-left: 15px;  }
+.form-control {
+    width: 100%;
+    padding: 12px; /* Increase the padding for larger text boxes */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Increase the font size for larger text boxes */
+  }
+  
+  
+  /* Style for form labels */
+  .form-group label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Style for form inputs */
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Style for small text below inputs */
+  .form-text {
+    color: #777;
+  }
+  
+  /* Style for checkbox */
+  .form-check-input {
+    margin-top: 8px;
+  }
+  
+  /* Style for submit button */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px; /* Add margin at the bottom of the submit button */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover state */
+  .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Add a slight scaling effect on hover */
+  }
+  
+  /* Active state (when button is clicked) */
+  .btn-primary:active {
+    background-color: #003d80;
+    transform: scale(0.95); /* Add a slight scaling effect when clicked */
+  }

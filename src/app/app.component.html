@@ -14,26 +14,30 @@
 
 <div id="wrapper">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Employees Management System</a>
-        </div>
+       
+        
     </nav>
+    <div class="employees-system-section">
+        <h1>Employees System</h1>
+        <!-- Add any content specific to the Employees System here -->
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav side-nav">
                 <li>
+                    <a routerLink="/login" class="nav-link" data-section="login"><i class="fa fa-fw fa-user-plus"></i>login Employees</a>
+                </li>
+                <li>
+                    <a routerLink="/register" class="nav-link" data-section="rigster"><i class="fa fa-fw fa-user-plus"></i>New user</a>
+                </li>
+                <li>
                     <a routerLink="/add" class="nav-link" data-section="add"><i class="fa fa-fw fa-user-plus"></i>Add</a>
                 </li>
+                
                 <li>
-                    <a href="#" class="nav-link" data-section="update"><i class="fa fa-fw fa-user-plus"></i>Update</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link" data-section="delete"><i class="fa fa-fw fa-paper-plane-o"></i>Delete</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link" data-section="help"><i class="fa fa-fw fa fa-question-circle"></i>Help</a>
+                    <a routerLink="/list" class="nav-link" data-section="list"><i class="fa fa-fw fa fa-question-circle"></i>list</a>
                 </li>
             </ul>
         </div>

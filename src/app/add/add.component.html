@@ -1,0 +1,40 @@
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<form class="form-container" [formGroup]="add" (ngSubmit)="createEmployees()">
+  <div  *ngIf="alert" class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>success!</strong> Your data send successfly.
+  <button (click)="alertclose()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">Name</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name" formControlName="name">
+        <small id="emailHelp" class="form-text text-muted">Type full Name.</small>
+      </div>
+    <div class="form-group" >
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" formControlName="email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">phone_number</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter phone" formControlName="phone_number">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter address" formControlName="address">
+        <small id="emailHelp" class="form-text text-muted"></small>
+      </div>
+    
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Recive an email from our company</label>
+    </div>
+    <button  type="submit" class="btn btn-primary">Submit</button>
+  </form>
